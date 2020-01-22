@@ -12,7 +12,7 @@ async def on_voice_state_update(before, after):
         nowtime = datetime.datetime.utcnow() 
         nowtime = nowtime + datetime.timedelta(hours=9) 
         nowtime = nowtime.strftime("%m/%d-%H:%M") 
-        vcchannel = client.get_channel('664073555117342720') 
+        vcchannel = client.get_channel('631044338629214238') 
  
         if(before.voice_channel is None): 
             jointext=nowtime + "に　"+ after.name + "　が　"+ after.voice_channel.name + " に参加しました。" 
